@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Desenvolvimento no Front-end 2</title>
+	<style type="text/css">
+		div#mudandoback {
+			background: green;
+			width: 100px;
+			height: 50px;
+		}
+	</style>
+	<script>
+		var clique = 1;
+		var cores = ["green", "blue"];
+
+		window.onload = function() {
+			var ins = document.querySelector("#instrucao");
+			ins.style.background = "lightgray";
+			ins.style.display = "inline";
+		}
+
+		function alteraTexto(){
+			var el = document.querySelector("#instrucao");
+			el.innerHTML = "Clique aqui! ("+clique+")";
+			clique++;
+		}
+
+		function mudaCor(indiceCor){
+			document.querySelector("#mudandoback").style.background = cores[indiceCor];
+		}
+
+	</script>
+</head>
+<body>
+
+	<h4>ATIVIDADE 01 - VALORES</h4>
+
+	<ol>
+		<li>
+			<strong>
+				Crie uma expressão com no mínimo 4 valores utilizando os operadores (*,+,/,-) retorne: 45, -30, 135, 90.
+			</strong>
+			<p>
+				<code>
+					1 * 40 + 8 - 3 = 45<br/>
+					240 - 90 * 3 / 1 = -30<br/>
+					1 * 280 / 2 - 5 = 135<br/>
+					11 * 20 / 2 - 20 = 90
+				</code>
+			</p>
+		</li>
+		<li>
+			<strong>
+				Crie uma expressão com no mínimo 4 valores utilizando os operadores (*,+,/,-) e obrigatoriamente utilizando pelo menos um () e uma operação com módulo (%) retorne: 2, 50, -80, 10.
+			</strong>
+			<p>
+				<code>
+					(20 + 1 * 10) % 4<br/>
+					90 % 4 = 2<br/>
+					1050 % 1000 = 50<br/>
+					-9000 % 8920 = -80<br/>
+					100 % 90 = 10
+				</code>			
+			</p>
+		</li>
+		<li>
+			<strong>
+				Crie uma expressão booleana que utilize pelo menos 3 operadores boleanos que retorne: true, false.
+			</strong>
+			<p>
+				<code>
+					((10 == 10 || 2 == 1) && (1 == 1 && 1 != 2)); // true<br/>
+					((10 == 10 || 2 == 1) && (1 == 1 && 1 != 1)); // false
+				</code>
+			</p>
+		</li>
+	</ol>
+	<hr/>
+
+	<h4>ATIVIDADE 02 - STRINGS</h4>
+
+	<ol>
+		<li>
+			<strong>
+				Escreva uma string com seu nome e sobrenome.
+			</strong>
+			<p>
+				<code>
+					var nome = "Edilson ";<br/>
+					var sobrenome = "Silva";<br/>
+					var nomeCompleto = nome + sobrenome;
+				</code>
+			</p>
+		</li>
+		<li>
+			<strong>
+				Crie uma expressão com no mínimo 4 valores utilizando os operadores (*,+,/,-) e obrigatoriamente utilizando pelo menos um () e uma operação com módulo (%) retorne: 2, 50, -80, 10.
+			</strong>
+			<p>
+				<code>
+					var nome = "Edilson, ";<br/>
+					var idade = 23;<br/>
+					var complemento = " anos";<br/>
+					var nomeComIdade = nome + idade + complemento;
+				</code>
+			</p>
+		</li>
+		<li>
+			<strong>
+				Crie uma expressão booleana que utilize pelo menos 3 operadores boleanos que retorne: true, false.
+			</strong>
+			<p>
+				<code>
+					"ola" == "OLA"; // false<br/>
+					"ola" == "ola"; // true
+				</code>
+			</p>
+		</li>
+	</ol>
+	<hr>
+
+	<h4>PRÁTICA 01</h4>
+
+	<ol>
+		<li>
+			<strong>
+				Escreva strings que apresentem os seguintes resultados.
+			</strong>
+
+			<div>
+				<p>
+					<b>Resultado 01</b><br/><br/>
+					“Hoje eu acordei e depois:<br/>&emsp;
+					Tomei banho<br/>&emsp;
+					Peguei o ônibus<br/>&emsp;
+					Cheguei na FLF”
+				</p>
+			</div>
+			<div>
+				<p>
+					<b>Resultado 02</b><br/><br/>
+					“Hoje não tenho<br/>tempo\dinheiro para<br/>almoçar, irei ficar “varado<br/>de fome””
+					
+				</p>
+			</div>
+
+			<p>
+				<code>
+					var s1 = "Hoje eu acordei e depois\n\tTomei banho\n\tPeguei o ônibus\n\tCheguei a FLF";<br/>
+					var s2 = "Hoje eu não tenho tempo\\dinheiro para almoçar, irei ficar \"Varado de fome\"";
+				</code>
+			</p>
+		</li>
+		<li>
+			<strong>
+				Escreva uma string que contenha exatamente 40 caractes.
+			</strong>
+			<p>
+				<code>
+					var s3 = "Eu escrevi uma String com 40 caracteres.";
+				</code>
+			</p>
+		</li>
+	</ol>
+	<hr/>
+
+	<h4>PRÁTICA 02</h4>
+	<div id="instrucao" onclick="alteraTexto()">
+		Clique aqui!
+	</div>
+	<br/><br/>
+	<div id="mudandoback" onmouseenter="mudaCor(1)" onmouseleave="mudaCor(0)"></div>
+
+</body>
+</html>
