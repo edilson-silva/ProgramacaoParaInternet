@@ -1,0 +1,57 @@
+body{
+	background-image: linear-gradient(to bottom, white, lightblue);
+}
+
+article {
+	margin: auto;
+	border: 1px dashed gray;
+	width: 400px;
+	background-color: white;
+	padding: 15px;
+}
+
+article section {
+	margin: 0px;
+}
+
+article h1 {
+	text-align: center;
+}
+
+section {
+	padding: 10px;
+	background: #C2F8F9;
+	text-align: justify;
+}
+
+section b{
+	color: #A103C4;
+}
+
+section strong{
+	color: purple;
+}
+
+footer {
+	font-size: 12px;
+	padding: 10px;
+	color: blue;
+	text-align: right;
+	margin-right: -10px;
+}
+
+.botoes{
+	display: table-cell;
+}
+
+.btn{
+	width: 193px;
+	padding: 8px;
+	background: rgba(0,0,0,.4);
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.btnExibir{
+	margin-left: 10px;
+}
