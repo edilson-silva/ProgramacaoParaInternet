@@ -27,6 +27,9 @@ header #dTextos p#textoPrimario {
 	font-size: 28px;
 }
 
+#conteudo {
+    margin-bottom: 50px;
+}
 nav {
     float: left;
     margin: 0;
