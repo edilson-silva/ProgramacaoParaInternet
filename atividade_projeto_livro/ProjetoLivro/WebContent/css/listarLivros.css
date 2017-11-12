@@ -1,0 +1,63 @@
+@Charset "UTF-8";
+
+#listaLivrosHeader {
+    padding: 15px;
+}
+
+#listaLivrosHeaderText {
+    font-size: 14pt;
+    color: #000;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#mLista {
+    padding-bottom: 15px;
+}
+
+#mLista table {
+    /* width: 100%; */
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    border: 2px solid #333;
+    border-collapse: collapse;
+    text-transform: uppercase;
+}
+
+#mLista table th {
+    font-size: 12pt;
+    background: #333;
+    color: #fff;
+}
+
+#mLista table td {
+    font-size: 11pt;
+}
+
+#mLista table th, td {
+    border: 2px solid #333;
+    padding: 10px 15px;
+}
+
+#mLista table td button {
+    width: 40%;
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    border: 0px;
+    font-size: 24px;
+}
+
+#mLista table td button:hover {
+    border: 1px solid #000;
+    font-size: 20px;
+}
+
+/* TESTE HOVER EM LINHA DA TABELA */
+/*
+#mLista table tbody tr:hover{
+    background: #333;
+    color: #fff;
+}
+*/

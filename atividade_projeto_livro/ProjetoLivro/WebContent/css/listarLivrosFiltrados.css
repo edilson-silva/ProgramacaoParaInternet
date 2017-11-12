@@ -1,0 +1,12 @@
+@Charset "UTF-8";
+
+#filtro {
+    width: 100%;
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 12pt;
+}
